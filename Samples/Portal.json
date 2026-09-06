@@ -1,0 +1,946 @@
+{
+    "Emitters": [
+        {
+            "Buffer": {
+                "Color": {
+                    "Arg1": [
+                        1.0,
+                        1.100000023841858,
+                        1.0,
+                        0.800000011920929
+                    ],
+                    "Arg2": [
+                        0.949999988079071,
+                        1.899999976158142,
+                        1.2999999523162842,
+                        0.800000011920929
+                    ],
+                    "SetType": "UNSET"
+                },
+                "Count": 256,
+                "LifeTime": {
+                    "Arg1": 2.0,
+                    "Arg2": 2.5,
+                    "SetType": "RANDOMLINEAR"
+                },
+                "Position": {
+                    "Arg1": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Arg2": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "SetType": "UNSET"
+                },
+                "Rotation": {
+                    "Arg1": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Arg2": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "SetType": "UNSET"
+                },
+                "Scale": {
+                    "Arg1": [
+                        2.5,
+                        2.5,
+                        1.0
+                    ],
+                    "Arg2": [
+                        3.0,
+                        3.0,
+                        1.0
+                    ],
+                    "SetType": "RANDOMLINEAR"
+                },
+                "ShapeLocation": {
+                    "HandleRadius": 0.05000000074505806,
+                    "LargeRadius": 0.6000000238418579,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Shape": "TORUS",
+                    "U_Distribution": 0.0,
+                    "V_Distribution": 0.0
+                },
+                "UVSet": {
+                    "Count": 1.0,
+                    "UV": [
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "DelayTime": 0.20000000298023224,
+            "Event": 0,
+            "Float": [
+                {
+                    "Name": "",
+                    "Value": 0.0
+                },
+                {
+                    "Name": "AlphaTest",
+                    "Value": 0.0
+                },
+                {
+                    "Name": "BloomThreshold",
+                    "Value": 0.6650000214576721
+                },
+                {
+                    "Name": "ColorScale",
+                    "Value": 1.0
+                },
+                {
+                    "Name": "MaskBrightness",
+                    "Value": 0.18000000715255737
+                },
+                {
+                    "Name": "RGBTest",
+                    "Value": 1.3200000524520874
+                },
+                {
+                    "Name": "SpawnRate",
+                    "Value": 3000.0
+                }
+            ],
+            "Float4": [
+                {
+                    "Name": "ColorIntensity",
+                    "Value": [
+                        0.0,
+                        0.5,
+                        0.0,
+                        0.5
+                    ]
+                }
+            ],
+            "LoopTime": 4294967295,
+            "Modules": [
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float3": [
+                            {
+                                "Name": "Amount",
+                                "Value": [
+                                    0.0,
+                                    1.5,
+                                    0.0
+                                ]
+                            }
+                        ]
+                    },
+                    "Init": true,
+                    "Module": "LINEAR_VELOCITY",
+                    "Order": 0,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float3": [
+                            {
+                                "Name": "Amount",
+                                "Value": [
+                                    0.0,
+                                    0.20000000298023224,
+                                    0.0
+                                ]
+                            },
+                            {
+                                "Name": "Origin",
+                                "Value": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        ]
+                    },
+                    "Init": false,
+                    "Module": "POINT_ACCELERATION",
+                    "Order": 1,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float": [
+                            {
+                                "Name": "Amount",
+                                "Value": 0.5
+                            }
+                        ]
+                    },
+                    "Init": false,
+                    "Module": "LIMIT_ACCELERATION",
+                    "Order": 2,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float": [
+                            {
+                                "Name": "Amount",
+                                "Value": 200.0
+                            },
+                            {
+                                "Name": "Pull Amount",
+                                "Value": 1600.0
+                            }
+                        ],
+                        "Float3": [
+                            {
+                                "Name": "Axis",
+                                "Value": [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ]
+                            },
+                            {
+                                "Name": "Origin Point",
+                                "Value": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        ]
+                    },
+                    "Init": false,
+                    "Module": "VORTEX_ACCELERATION",
+                    "Order": 3,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float": [
+                            {
+                                "Name": "Amount",
+                                "Value": 0.10000000149011612
+                            }
+                        ]
+                    },
+                    "Init": false,
+                    "Module": "DRAG",
+                    "Order": 4,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "SCALE",
+                    "Init": false,
+                    "Keyframe": [
+                        {
+                            "Data": [
+                                0.019999999552965164,
+                                0.05999999865889549,
+                                0.30000001192092896,
+                                1.0
+                            ],
+                            "Time": 0.0
+                        },
+                        {
+                            "Data": [
+                                0.029999999329447746,
+                                0.09000000357627869,
+                                0.30000001192092896,
+                                1.0
+                            ],
+                            "Time": 0.75
+                        },
+                        {
+                            "Data": [
+                                0.0010000000474974513,
+                                0.00139999995008111,
+                                0.30000001192092896,
+                                1.0
+                            ],
+                            "Time": 1.0
+                        }
+                    ],
+                    "Module": "SCALE_KEYFRAME",
+                    "Order": 5,
+                    "Type": "MODULE_KEYFRAME"
+                },
+                {
+                    "Apply": "COLOR",
+                    "Init": false,
+                    "Keyframe": [
+                        {
+                            "Data": [
+                                0.5,
+                                1.0,
+                                0.5,
+                                1.0
+                            ],
+                            "Time": 0.0
+                        },
+                        {
+                            "Data": [
+                                0.75,
+                                1.0,
+                                0.75,
+                                1.5
+                            ],
+                            "Time": 0.5
+                        },
+                        {
+                            "Data": [
+                                0.5,
+                                1.0,
+                                0.5,
+                                0.10000000149011612
+                            ],
+                            "Time": 1.0
+                        }
+                    ],
+                    "Module": "COLOR_KEYFRAME",
+                    "Order": 6,
+                    "Type": "MODULE_KEYFRAME"
+                }
+            ],
+            "Pooling": "REVIVE",
+            "ShaderPass": "VELOCITY_BILLBOARD_BLOOM",
+            "SpawnPosition": "RELATIVE_WORLD",
+            "SpawnType": "SPAWN_RATE",
+            "Texture": "../Bin/Resources/Textures/Effects/T_FX_CMN_Dust_01.dds",
+            "Time": 3.4028234663852886e+38,
+            "Transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "Type": "SPRITE"
+        },
+        {
+            "Buffer": {
+                "Color": {
+                    "Arg1": [
+                        0.5,
+                        1.0,
+                        0.5,
+                        2.0
+                    ],
+                    "Arg2": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "SetType": "UNSET"
+                },
+                "Count": 256,
+                "LifeTime": {
+                    "Arg1": 3.0,
+                    "Arg2": 0.0,
+                    "SetType": "DIRECTSET"
+                },
+                "Position": {
+                    "Arg1": [
+                        -0.5,
+                        0.0,
+                        -0.5
+                    ],
+                    "Arg2": [
+                        0.5,
+                        0.20000000298023224,
+                        0.5
+                    ],
+                    "SetType": "RANDOMRANGE"
+                },
+                "Rotation": {
+                    "Arg1": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Arg2": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "SetType": "UNSET"
+                },
+                "Scale": {
+                    "Arg1": [
+                        1.2000000476837158,
+                        1.2000000476837158,
+                        1.0
+                    ],
+                    "Arg2": [
+                        2.299999952316284,
+                        2.299999952316284,
+                        1.0
+                    ],
+                    "SetType": "RANDOMLINEAR"
+                },
+                "ShapeLocation": {
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Shape": "NONE"
+                },
+                "UVSet": {
+                    "Count": 1.0,
+                    "UV": [
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "DelayTime": 0.20000000298023224,
+            "Event": 0,
+            "Float": [
+                {
+                    "Name": "",
+                    "Value": 0.0
+                },
+                {
+                    "Name": "AlphaTest",
+                    "Value": 0.0
+                },
+                {
+                    "Name": "BloomThreshold",
+                    "Value": 0.0
+                },
+                {
+                    "Name": "ColorScale",
+                    "Value": 0.4000000059604645
+                },
+                {
+                    "Name": "MaskBrightness",
+                    "Value": 0.5
+                },
+                {
+                    "Name": "RGBTest",
+                    "Value": 0.0
+                },
+                {
+                    "Name": "SpawnRate",
+                    "Value": 120.0
+                }
+            ],
+            "Float4": [
+                {
+                    "Name": "ColorIntensity",
+                    "Value": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            ],
+            "LoopTime": 4294967295,
+            "Modules": [
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float3": [
+                            {
+                                "Name": "Amount",
+                                "Value": [
+                                    0.0,
+                                    0.30000001192092896,
+                                    0.0
+                                ]
+                            }
+                        ]
+                    },
+                    "Init": true,
+                    "Module": "LINEAR_VELOCITY",
+                    "Order": 0,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float": [
+                            {
+                                "Name": "Amount",
+                                "Value": 1.0
+                            }
+                        ]
+                    },
+                    "Init": true,
+                    "Module": "INIT_ACCELERATION",
+                    "Order": 1,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float": [
+                            {
+                                "Name": "Amount",
+                                "Value": 0.10000000149011612
+                            }
+                        ]
+                    },
+                    "Init": false,
+                    "Module": "DRAG",
+                    "Order": 2,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "COLOR",
+                    "Init": false,
+                    "Keyframe": [
+                        {
+                            "Data": [
+                                0.10000000149011612,
+                                0.4000000059604645,
+                                0.10000000149011612,
+                                0.0
+                            ],
+                            "Time": 0.0
+                        },
+                        {
+                            "Data": [
+                                0.4000000059604645,
+                                0.800000011920929,
+                                0.4000000059604645,
+                                2.5
+                            ],
+                            "Time": 0.20000000298023224
+                        },
+                        {
+                            "Data": [
+                                0.4000000059604645,
+                                0.800000011920929,
+                                0.4000000059604645,
+                                2.5
+                            ],
+                            "Time": 0.30000001192092896
+                        },
+                        {
+                            "Data": [
+                                0.10000000149011612,
+                                0.4000000059604645,
+                                0.10000000149011612,
+                                0.0
+                            ],
+                            "Time": 0.5
+                        },
+                        {
+                            "Data": [
+                                0.4000000059604645,
+                                0.800000011920929,
+                                0.4000000059604645,
+                                2.5
+                            ],
+                            "Time": 0.699999988079071
+                        },
+                        {
+                            "Data": [
+                                0.4000000059604645,
+                                0.800000011920929,
+                                0.4000000059604645,
+                                2.5
+                            ],
+                            "Time": 0.800000011920929
+                        },
+                        {
+                            "Data": [
+                                0.10000000149011612,
+                                0.4000000059604645,
+                                0.10000000149011612,
+                                0.0
+                            ],
+                            "Time": 1.0
+                        }
+                    ],
+                    "Module": "COLOR_KEYFRAME",
+                    "Order": 3,
+                    "Type": "MODULE_KEYFRAME"
+                },
+                {
+                    "Apply": "SCALE",
+                    "Init": false,
+                    "Keyframe": [
+                        {
+                            "Data": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 0.0
+                        },
+                        {
+                            "Data": [
+                                0.550000011920929,
+                                0.550000011920929,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 0.20000000298023224
+                        },
+                        {
+                            "Data": [
+                                0.550000011920929,
+                                0.550000011920929,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 0.30000001192092896
+                        },
+                        {
+                            "Data": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 0.5
+                        },
+                        {
+                            "Data": [
+                                0.550000011920929,
+                                0.550000011920929,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 0.699999988079071
+                        },
+                        {
+                            "Data": [
+                                0.550000011920929,
+                                0.550000011920929,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 0.800000011920929
+                        },
+                        {
+                            "Data": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 1.0
+                        }
+                    ],
+                    "Module": "SCALE_KEYFRAME",
+                    "Order": 4,
+                    "Type": "MODULE_KEYFRAME"
+                }
+            ],
+            "Pooling": "REVIVE",
+            "ShaderPass": "DEFAULT_BLOOM",
+            "SpawnPosition": "RELATIVE_WORLD",
+            "SpawnType": "SPAWN_RATE",
+            "Texture": "../Bin/Resources/Textures/Effects/T_FX_CMN_Flash_02.dds",
+            "Time": 3.4028234663852886e+38,
+            "Transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "Type": "SPRITE"
+        },
+        {
+            "Buffer": {
+                "Color": {
+                    "Arg1": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Arg2": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "SetType": "UNSET"
+                },
+                "Count": 16,
+                "LifeTime": {
+                    "Arg1": 1.0,
+                    "Arg2": 1.5,
+                    "SetType": "RANDOMLINEAR"
+                },
+                "Position": {
+                    "Arg1": [
+                        -0.5,
+                        0.20000000298023224,
+                        -0.5
+                    ],
+                    "Arg2": [
+                        0.5,
+                        0.10000000149011612,
+                        0.5
+                    ],
+                    "SetType": "RANDOMRANGE"
+                },
+                "Rotation": {
+                    "Arg1": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Arg2": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "SetType": "UNSET"
+                },
+                "Scale": {
+                    "Arg1": [
+                        1.7999999523162842,
+                        1.600000023841858,
+                        1.0
+                    ],
+                    "Arg2": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "SetType": "DIRECTSET"
+                },
+                "ShapeLocation": {
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "Shape": "NONE"
+                },
+                "UVSet": {
+                    "Count": 1.0,
+                    "UV": [
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "DelayTime": 0.5,
+            "Event": 0,
+            "Float": [
+                {
+                    "Name": "AlphaTest",
+                    "Value": 0.0
+                },
+                {
+                    "Name": "BloomThreshold",
+                    "Value": 0.23000000417232513
+                },
+                {
+                    "Name": "ColorScale",
+                    "Value": 0.699999988079071
+                },
+                {
+                    "Name": "MaskBrightness",
+                    "Value": 1.0
+                },
+                {
+                    "Name": "RGBTest",
+                    "Value": 0.0
+                },
+                {
+                    "Name": "SpawnRate",
+                    "Value": 40.0
+                }
+            ],
+            "Float4": [
+                {
+                    "Name": "ColorIntensity",
+                    "Value": [
+                        0.0,
+                        0.20000000298023224,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ],
+            "LoopTime": 4294967295,
+            "Modules": [
+                {
+                    "Apply": "SCALE",
+                    "Init": false,
+                    "Keyframe": [
+                        {
+                            "Data": [
+                                0.03500000014901161,
+                                0.6000000238418579,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 0.0
+                        },
+                        {
+                            "Data": [
+                                0.03500000014901161,
+                                0.019999999552965164,
+                                1.0,
+                                1.0
+                            ],
+                            "Time": 1.0
+                        }
+                    ],
+                    "Module": "SCALE_KEYFRAME",
+                    "Order": 0,
+                    "Type": "MODULE_KEYFRAME"
+                },
+                {
+                    "Apply": "TRANSLATION",
+                    "Datas": {
+                        "Float3": [
+                            {
+                                "Name": "Amount",
+                                "Value": [
+                                    0.0,
+                                    1.5,
+                                    0.0
+                                ]
+                            }
+                        ]
+                    },
+                    "Init": true,
+                    "Module": "LINEAR_VELOCITY",
+                    "Order": 1,
+                    "Type": "MODULE_TRANSLATION"
+                },
+                {
+                    "Apply": "COLOR",
+                    "Init": false,
+                    "Keyframe": [
+                        {
+                            "Data": [
+                                0.5,
+                                0.800000011920929,
+                                0.5,
+                                0.10000000149011612
+                            ],
+                            "Time": 0.0
+                        },
+                        {
+                            "Data": [
+                                0.800000011920929,
+                                1.0,
+                                0.800000011920929,
+                                2.5
+                            ],
+                            "Time": 0.5
+                        },
+                        {
+                            "Data": [
+                                0.5,
+                                0.800000011920929,
+                                0.5,
+                                1.0
+                            ],
+                            "Time": 1.0
+                        }
+                    ],
+                    "Module": "COLOR_KEYFRAME",
+                    "Order": 2,
+                    "Type": "MODULE_KEYFRAME"
+                }
+            ],
+            "Pooling": "REVIVE",
+            "ShaderPass": "ROTATION_BILLBOARD_BLOOM",
+            "SpawnPosition": "RELATIVE_WORLD",
+            "SpawnType": "SPAWN_RATE",
+            "Texture": "../Bin/Resources/Textures/Effects/T_FX_CMN_Dust_02.dds",
+            "Time": 3.4028234663852886e+38,
+            "Transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "Type": "SPRITE"
+        }
+    ],
+    "Name": "Portal",
+    "ToolLoopTime": 2.0
+}
