@@ -140,12 +140,6 @@ CEffect_System                 이펙트 한 덩어리 (JSON 1개 = 시스템 1�
 파라미터·키프레임까지 JSON에 들어 있고, 에디터에서 편집한 결과가 같은 포맷으로 저장됩니다.
 `Samples/` 에 실제 게임 빌드에서 쓰던 정의 파일을 넣어두었습니다.
 
-| 파일 | 내용 |
-|---|---|
-| [`CyberBulletHit.json`](Samples/CyberBulletHit.json) | 가장 단순한 예시. `BURST_SPAWN` 이미터 2개(32 / 16개), 모듈 4개. 한 번 터지고 끝나는 타격 이펙트 |
-| [`Portal.json`](Samples/Portal.json) | 가속 계열 모듈을 폭넓게 쓴 예시. `SPAWN_RATE` 이미터 3개(256 / 256 / 16개), 모듈 15개. `VORTEX_ACCELERATION`, `POINT_ACCELERATION`, `LIMIT_ACCELERATION`, `DRAG` 조합 |
-| [`Zip.json`](Samples/Zip.json) | 규모가 가장 큰 예시. 이미터 3개 합계 7,168개, 모듈 10개. `UV_ANIM` 으로 텍스처 애니메이션까지 사용 |
-
 대략적인 구조는 다음과 같습니다.
 
 ```jsonc
